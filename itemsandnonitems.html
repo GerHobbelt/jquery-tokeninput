@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="src/jquery.tokeninput.js"></script>
+
+    <link rel="stylesheet" href="styles/token-input.css" type="text/css" />
+    <link rel="stylesheet" href="styles/token-input-facebook.css" type="text/css" />
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+
+        $("input[type=button]").click(function () {
+            alert("Would submit: " + $(this).siblings("input[type=text]").val());
+        });
+		
+	
+    });
+    </script>
+</head>
+
+<body>
+    <h1>jQuery Tokeninput Demo</h1>
+
+    
+
+
+ 
+
+
+    <h2 id="theme">Facebook Theme</h2>
+	
+	<h3> this sample is add items that not in the list and also in the list </h3>
+	<div> just select item from list ,and than write something that not in list and press enter</div>
+	<div> it's usefull who want to use this like gmail (mail) </div>
+    <div>
+        <input type="text" id="demo-input-facebook-theme" name="blah2" />
+        <input type="button" value="Submit" />
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#demo-input-facebook-theme").tokenInput("http://shell.loopj.com/tokeninput/tvshows.php", {
+                theme: "facebook"
+            });
+        });
+        </script>
+    </div>
+
+
+   
+
+
+
+    
+  
+</body>
+</html>
